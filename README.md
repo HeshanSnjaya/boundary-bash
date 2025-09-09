@@ -1,50 +1,52 @@
-# Welcome to your Expo app 👋
+# Event Management Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native mobile application built with Expo SDK 53+ for managing cricket event participants, attendance, and food distribution.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- QR code scanning for participant check-in
+- Real-time dashboard with Victory Native charts
+- User authentication and role-based access
+- Dark/Light theme support
+- Redux state management
 
-   ```bash
-   npm install
-   ```
+## 📋 Prerequisites
 
-2. Start the app
+- Node.js 20+ (required for Expo SDK 53+)
+- Expo CLI: `npm install -g @expo/cli`
+- iOS Simulator or Android Emulator
 
-   ```bash
-   npx expo start
-   ```
+## 🛠️ Installation
 
-In the output, you'll find options to open the app in a
+1. Clone the repository
+2. Install dependencies:
+3. Start the development server:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📱 Compatibility
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- iOS 13.4+
+- Android API Level 21+
+- Expo SDK 53+
+- Node.js 20+
 
-## Get a fresh project
+## 🔧 Build & Deploy
 
-When you're ready, run:
+Build for production
+npx eas build --platform all
 
-```bash
-npm run reset-project
-```
+Submit to app stores
+npx eas submit
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Installation Commands
 
-## Learn more
+# Delete old dependencies
+rm -rf node_modules package-lock.json
 
-To learn more about developing your project with Expo, look at the following resources:
+# Install with legacy peer deps for SDK 53
+npm install --legacy-peer-deps
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# Start the development server
+npm start
 
-## Join the community
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.

@@ -1,42 +1,59 @@
 {
   "expo": {
-    "name": "boundary-bash",
+    "name": "Event Management",
     "slug": "boundary-bash",
     "version": "1.0.0",
+    "sdkVersion": "53.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "boundarybash",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.boundarybash",
+      "newArchEnabled": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.yourcompany.boundarybash",
+      "newArchEnabled": true,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
     },
     "web": {
-      "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
     },
     "plugins": [
-      "expo-router",
       [
-        "expo-splash-screen",
+        "expo-camera",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera to scan QR codes.",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone for video recording.",
+          "recordAudioAndroid": true
         }
-      ]
+      ],
+      "expo-font",
+      "expo-splash-screen"
     ],
-    "experiments": {
-      "typedRoutes": true
-    }
+    "scheme": "boundary-bash",
+    "extra": {
+      "eas": {
+        "projectId": "f39f94fb-2b9a-455d-9bc1-6a4da88ea412"
+      }
+    },
+    "owner": "heshansanjaya"
   }
 }
